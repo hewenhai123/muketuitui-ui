@@ -1,0 +1,45 @@
+/*
+*@Author:Hewenhai
+*@Date:2019-08-26 13:59
+*@Last Modified by:Hewenhai
+*@Last Modified time:2019-08-26 13:59
+*/
+
+
+/*底部导航栏*/
+.tt-navbar{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+    width: 100%;
+    max-width: 640px;
+    height: 2.5rem;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+/*导航项目*/
+.tt-navbar > .navbar-item{
+    flex: 1;
+    color: #808080;
+}
+
+/*导航选中样式*/
+.tt-navbar > .navbar-item.active{
+    color: #09BB07;
+}
+
+/*导航图标*/
+.tt-navbar >.navbar-item >.icon{
+    padding: 0.3rem 0.1rem;
+    font-size: 1.1rem;
+}
+
+/*导航名称*/
+.tt-navbar >.navbar-item >.name{
+    display: block;
+    font-size: 0.5rem;
+}

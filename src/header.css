@@ -1,0 +1,47 @@
+/*
+*@Author:Hewenhai
+*@Date:2019-08-26 13:59
+*@Last Modified by:Hewenhai
+*@Last Modified time:2019-08-26 13:59
+*/
+
+
+/*头部导航条*/
+
+.tt-header{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    z-index: 200;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 640px;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background: #f8f8f8;
+}
+
+/*左侧功能区*/
+.tt-header >.left{
+   flex-basis: 3rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+
+/*中间标题*/
+.tt-header >.title{
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+/*右边功能区*/
+.tt-header >.right{
+    flex-basis: 3rem;
+    flex-shrink: 0;
+}

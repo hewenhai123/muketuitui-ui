@@ -1,0 +1,47 @@
+/*
+*@Author:Hewenhai
+*@Date:2019-08-26 13:59
+*@Last Modified by:Hewenhai
+*@Last Modified time:2019-08-26 13:59
+*/
+
+
+/*去掉多有元素的内外边距*/
+html,body,div,span,
+h1,h2,h3,h4,h5,h6,p,pre,
+a,img,ul,li,form,label,input,
+table,tbody,tfoot,thead,tr,th,td,
+audio,video{
+    margin:0;
+    padding: 0;
+}
+
+/*统一全局字体*/
+body{
+    font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+}
+
+
+/*去除列表元素的默认样式*/
+ul,ol{
+    list-style: none;
+}
+
+/*Table 元素的边框折叠 */
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*去掉默认的下划线*/
+a{
+    text-decoration: none;
+}
+/*去掉input自带的边缘效果和背景颜色*/
+input{
+    outline: none;
+    background: none;
+}
+
+
+

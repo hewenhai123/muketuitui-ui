@@ -1,0 +1,104 @@
+/*
+*@Author:Hewenhai
+*@Date:2019-08-26 13:59
+*@Last Modified by:Hewenhai
+*@Last Modified time:2019-08-26 13:59
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*屏幕适配框架*/
+/*
+在这个项目里，我们直接忽略“设备类型”字段，默认对所有媒体都生效。然后把宽度分成三个区间，
+340px到410px的宽度内的屏幕定为基准区间（以iPhone6/7/8屏幕的375px作为基准，
+向两边浮动35px就是这个基准区间），
+而另外两个区间就是小于340px的部分和大于410px的部分，用代码表示出来就是：
+
+因为媒体查询里的样式生效的原理是样式的覆盖，
+所以上面三条语句中可以做一下精简，用一个区间内的样式当做基础样式，
+这里我们就可以把样式2拿出来。这样做的好处除了能精简代码外，
+在对媒体查询支持不好的设备上也有一个基础的样式可以用。改造后就可以变成：
+
+*/
+
+
+
+
+/*!*屏幕宽度在340px至410px*!*/
+/*@media(min-width: 340px)and(max-width: 410px){*/
+
+    /*使用这个范围区间作为基准区间*/
+
+/*}*/
+
+
+/*!*屏幕宽度在340px至410px*!*/
+
+html{
+    font-size: 20px;
+
+}
+
+/*body 默认样式*/
+
+body{
+    overflow-x: hidden;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f8f8f8;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*页面蒙版*/
+.tt-mask{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 300;
+    background: rgba(0,0,0,.5);
+}
+
+
+
+
+
+
+
+
+/*屏宽度幕小于340px*/
+@media (max-width: 340px) {
+    html{
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+/*屏幕宽度大于410px*/
+@media (max-width: 410px) {
+    html{
+        font-size: 22px;
+
+    }
+
+}
