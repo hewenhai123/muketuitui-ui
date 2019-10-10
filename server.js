@@ -8,7 +8,9 @@ app.get('/',function(req,res){
 
 });
 app.get('/layout',(req,res)=>{
-    res.send("hello layout");
+
+
+    res.sendFile(path.join(__dirname,"../demo/layout.html"));
 })
 
 const server =app.listen(8080,()=>{
