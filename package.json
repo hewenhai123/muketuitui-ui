@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hewenhai123/muketuitui-ui/issues"
   },
-  "homepage": "https://github.com/hewenhai123/muketuitui-ui#readme"
+  "homepage": "https://github.com/hewenhai123/muketuitui-ui#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
