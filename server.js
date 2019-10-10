@@ -9,9 +9,10 @@ app.get('/',function(req,res){
 
 });
 app.get('/layout',(req,res)=>{
-
-
     res.sendFile(path.join(__dirname,"/demo/layout.html"));
+});
+app.get('/layout-c',(req,res)=>{
+    res.sendFile(path.join(__dirname,"/demo/layout-component.html"));
 })
 
 const server =app.listen(8080,()=>{
