@@ -1,6 +1,6 @@
 const express=require('express');
 const app=express();
-
+const path =require('path');
 app.get('/',function(req,res){
        console.log(req.route);
        console.log(req.query);
