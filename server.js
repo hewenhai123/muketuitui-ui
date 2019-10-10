@@ -2,7 +2,8 @@ const express=require('express');
 const app=express();
 
 app.get('/',function(req,res){
-       console.log(req.router);
+       console.log(req.route);
+       console.log(req.query);
     res.send("hello world");
 
 });
