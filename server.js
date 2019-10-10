@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 
 app.get('/',function(req,res){
-
+       console.log(req.parameters)
     res.send("hello world");
 
 })
