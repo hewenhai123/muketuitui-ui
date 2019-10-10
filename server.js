@@ -1,6 +1,7 @@
 const express=require('express');
 const app=express();
 const path =require('path');
+app.use('/public',express.static('public'));
 app.get('/',function(req,res){
        console.log(req.route);
        console.log(req.query);
