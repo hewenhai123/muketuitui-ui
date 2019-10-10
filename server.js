@@ -7,6 +7,9 @@ app.get('/',function(req,res){
     res.send("hello world");
 
 });
+app.get('/layout',(req,res)=>{
+    res.send("hello layout");
+})
 
 const server =app.listen(8080,()=>{
     let host=server.address().address
