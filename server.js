@@ -15,6 +15,11 @@ app.get('/layout-c',(req,res)=>{
     res.sendFile(path.join(__dirname,"/demo/layout-component.html"));
 })
 
+app.get('/icon',(req,res)=>{
+	
+	res.sendFile(path.join(__dirname,"/demo/icon.html"))
+})
+
 const server =app.listen(80,()=>{
     let host=server.address().address
     let port=server.address().port
