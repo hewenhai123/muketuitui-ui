@@ -15,7 +15,7 @@ app.get('/layout-c',(req,res)=>{
     res.sendFile(path.join(__dirname,"/demo/layout-component.html"));
 })
 
-const server =app.listen(8080,()=>{
+const server =app.listen(80,()=>{
     let host=server.address().address
     let port=server.address().port
     console.log("服务器已经启动",host,port);
