@@ -17,8 +17,10 @@ app.get('/layout-c',(req,res)=>{
 
 app.get('/icon',(req,res)=>{
 	
-	res.sendFile(path.join(__dirname,"/demo/icon.html"))
+	res.sendFile(path.join(__dirname,"/demo/icon.html"));
 })
+
+//我对这个文件进行了修改
 
 const server =app.listen(80,()=>{
     let host=server.address().address
@@ -26,3 +28,4 @@ const server =app.listen(80,()=>{
     console.log("服务器已经启动",host,port);
 
 });
+
